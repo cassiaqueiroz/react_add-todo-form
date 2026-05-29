@@ -46,6 +46,7 @@ export const TodoForm: React.FC<Props> = ({ users, onAdd }) => {
       <h1>Add todo form</h1>
       <form action="/api/todos" method="POST" onSubmit={handleSubmit}>
         <div className="field">
+          <label htmlFor="titleInput">Title:</label>
           <input
             type="text"
             data-cy="titleInput"
@@ -58,6 +59,7 @@ export const TodoForm: React.FC<Props> = ({ users, onAdd }) => {
           )}
         </div>
         <div className="field">
+          <label htmlFor="userSelect">User:</label>
           <select
             data-cy="userSelect"
             value={userId}
