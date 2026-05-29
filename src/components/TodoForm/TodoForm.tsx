@@ -48,6 +48,7 @@ export const TodoForm: React.FC<Props> = ({ users, onAdd }) => {
         <div className="field">
           <label htmlFor="titleInput">Title:</label>
           <input
+            id="titleInput"
             type="text"
             data-cy="titleInput"
             placeholder="What needs to be done?"
@@ -61,6 +62,7 @@ export const TodoForm: React.FC<Props> = ({ users, onAdd }) => {
         <div className="field">
           <label htmlFor="userSelect">User:</label>
           <select
+            id="userSelect"
             data-cy="userSelect"
             value={userId}
             onChange={handleUserChange}
